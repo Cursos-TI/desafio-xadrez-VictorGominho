@@ -2,7 +2,7 @@
 
 int main() {
      
-     int torreMove = 5, bispoMove = 5, rainhaMove = 8;
+     int torreMove = 5, bispoMove = 5, rainhaMove = 8, cavaloMove1 = 2, cavaloMove2 = 1;
 
      printf("### Xadrez ###\n\n");
      
@@ -24,5 +24,14 @@ int main() {
           printf("Esquerda\n");
           rainhaMove--;
      } while (rainhaMove > 0);
-      
+
+     printf("\nMovimentos do Cavalo:\n"); // 2 para baixo e 1 para esquerda
+     for (cavaloMove2; cavaloMove2 > 0; cavaloMove2--) {
+          while (cavaloMove1 > 0)
+          {
+               printf("Baixo\n");
+               cavaloMove1--;
+          }
+          printf("Esquerda\n");
+     }
 }
